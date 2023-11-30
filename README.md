@@ -18,8 +18,9 @@ GUI Requirements:
 5. A button "Start Scanning" to start the process.
 6. Some statistics.
 7. A button "Open Log File" to open the log file just created.
+> For the GUI i use "tkinter"
 
-<b>"SOURCE" process specifications:</b>
+"SOURCE" process specifications:
 1. When the user clicks "Start Scan", the software first checks whether all input fields are filled.
 2. In that case, it switches to scanning the specified folder in the source path, including all subfolders and files.
 3. For each file it checks the extension and compares it with the "extensions" dictionary in file_extensions.py.
@@ -59,6 +60,16 @@ In the log file i want to keep tracking every step the process does
 18. total_files_remaining -> total amount of file remained in the source path
 
 # How to use it
+
+Requirements:
+> Python installed ( up to 3.x)
+> tkinter installed (for the GUI)
+
+To start the program:
+1. save both file in a single folder
+2. execute the prompt in the folder
+3. digit: "python file_organizer.py"
+
 
 
 
