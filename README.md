@@ -1,4 +1,4 @@
-# file_organizer
+# Automated File Organizer in Python with GUI
 Automatic Files Organizer.
 An automated file organizer categorizes files by their extensions and groups them by type. The software scans and moves files from a user-specified source path to a user-defined destination path (it doesn't copy the files; it moves them). Using the file extension, it determines the file type and organizes it alongside other files of the same type within the specified destination path.
 
