@@ -19,7 +19,7 @@ GUI Requirements:
 6. Some statistics.
 7. A button "Open Log File" to open the log file just created.
 
-"SOURCE" process specifications:
+<b>"SOURCE" process specifications:</b>
 1. When the user clicks "Start Scan", the software first checks whether all input fields are filled.
 2. In that case, it switches to scanning the specified folder in the source path, including all subfolders and files.
 3. For each file it checks the extension and compares it with the "extensions" dictionary in file_extensions.py.
