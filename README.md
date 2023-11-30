@@ -10,7 +10,8 @@ I require software that allows me to specify a source path and a destination pat
 
 # Specifications and Requirements
 
-GUI Requirements:
+**GUI Requirements:**
+
 1. An input field where you can enter the path of the source folder to analyze.
 2. An input field where you can enter the path of the destination folder of the files.
 3. An input field where you can enter the path of the log file.
@@ -18,27 +19,32 @@ GUI Requirements:
 5. A button "Start Scanning" to start the process.
 6. Some statistics.
 7. A button "Open Log File" to open the log file just created.
-**For the GUI i use "tkinter"**
 
-"SOURCE" process specifications:
+For the GUI i use "tkinter"
+
+**"SOURCE" process specifications:**
+
 1. When the user clicks "Start Scan", the software first checks whether all input fields are filled.
 2. In that case, it switches to scanning the specified folder in the source path, including all subfolders and files.
 3. For each file it checks the extension and compares it with the "extensions" dictionary in file_extensions.py.
 4. The dictionary has "key:value" like this "extension:type", so based on the extension it applies a type to the scanned file.
 5. Based on the assigned type it moves to the respective destination path.
 
-"DESTINATION" process specifications:
+**"DESTINATION" process specifications:**
+
 1. When the software will move the file to the destination, it first checks whether the directory for the assigned type exists.
 2. If not, it creates it.
 3. The software checks if the file already exists.
 4. If yes, rename it by adding a timestamp.
 
-BEFORE MOVING process specifications:
+**BEFORE MOVING process specifications:**
+
 Since this is a moving process and not a copying process, it is necessary to do some checks
 1. Check if source and destination paths are correct and reachable.
 2. Check if there is enough space in the destination path.
 
-LOG process specifications:
+**LOG process specifications:**
+
 In the log file i want to keep tracking every step the process does
 1. execution_time_var -> the time the process taking (end_time - start_time)
 2. error_count_var -> total error count during the process
@@ -61,14 +67,34 @@ In the log file i want to keep tracking every step the process does
 
 # How to use it
 
-Requirements:
-[Python installed ( up to 3.x)]
-[tkinter installed (for the GUI)]
+**Requirements:**
+
+Python installed ( up to 3.x)
+
+tkinter installed (for the GUI)
 
 To start the program:
 1. save both file in a single folder
 2. execute the prompt in the folder
 3. digit: "python file_organizer.py"
+
+To use the program:
+1. select the source path
+2. select the destination path
+3. select the log file path
+4. click on "start scanning"
+
+# Version
+
+First version released on 30.11.2023
+
+# Bug and future updates
+
+1. BUG: When the process ends, if you want to start a new scan it is advisable to close the program and start it again
+2. UPDATE: better UI/UX as soon as possible
+3. UPDATE: better structure of files and code cleaner
+4. UPDATE: creation of batch to schedule the operation
+5. UPDATE: creation of executable
 
 
 
