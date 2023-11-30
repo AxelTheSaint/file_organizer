@@ -18,7 +18,7 @@ GUI Requirements:
 5. A button "Start Scanning" to start the process.
 6. Some statistics.
 7. A button "Open Log File" to open the log file just created.
-> For the GUI i use "tkinter"
+[For the GUI i use "tkinter"]
 
 "SOURCE" process specifications:
 1. When the user clicks "Start Scan", the software first checks whether all input fields are filled.
@@ -62,8 +62,8 @@ In the log file i want to keep tracking every step the process does
 # How to use it
 
 Requirements:
-> Python installed ( up to 3.x)
-> tkinter installed (for the GUI)
+[Python installed ( up to 3.x)]
+[tkinter installed (for the GUI)]
 
 To start the program:
 1. save both file in a single folder
