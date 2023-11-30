@@ -32,12 +32,31 @@ GUI Requirements:
 3. The software checks if the file already exists.
 4. If yes, rename it by adding a timestamp.
 
-BEFORE MOVING process specification:
+BEFORE MOVING process specifications:
 Since this is a moving process and not a copying process, it is necessary to do some checks
 1. Check if source and destination paths are correct and reachable.
 2. Check if there is enough space in the destination path.
 
-
+LOG process specifications:
+In the log file i want to keep tracking every step the process does
+1. execution_time_var -> the time the process taking (end_time - start_time)
+2. error_count_var -> total error count during the process
+3. files_examined_var -> total number of examined files
+4. subfolders_examined_var -> total number of examined subfolders
+5. source_size_var -> total amount of source size (GB)
+6. subfolders_size_var (USELESS)
+7. files_size_var -> total amount of files source size (GB)
+8. folder_path ->  checking if existing folder
+9. "[+] Making {folder_name} folder" -> keep trace of creating folder
+10. "[+] {folder_name} folder already exists" -> keep trace of existing folder
+11. path -> keep trace of source path from input field
+12. main_path -> keep trace of destination path from input field
+13. log_file-> keep trace of log file path from input field
+14. start_time.strftime('%Y-%m-%d %H:%M:%S')}") -> keep trace of the time the process starts
+15. end_time.strftime('%Y-%m-%d %H:%M:%S') -> keep trace of the time the process ends
+16. total_files_moved -> total amount of moved files
+17. total_files_renamed -> total amount of renamed files
+18. total_files_remaining -> total amount of file remained in the source path
 
 # How to use it
 
