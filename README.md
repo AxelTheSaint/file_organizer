@@ -95,6 +95,7 @@ First version released on 30.11.2023
 3. UPDATE: better structure of files and code cleaner
 4. UPDATE: creation of batch to schedule the operation
 5. UPDATE: creation of executable
+6. UPDATE: make a wiki and clear the readme
 
 
 
